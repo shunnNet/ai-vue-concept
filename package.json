@@ -1,0 +1,63 @@
+{
+  "name": "llm-vue",
+  "version": "0.3.0",
+  "type": "module",
+  "main": "dist/index.umd.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "repository": "https://github.com/shunnNet/vue-use-modal-context",
+  "bugs": {
+    "url": "https://github.com/shunnNet/vue-use-modal-context/issues"
+  },
+  "keywords": [
+    "vue",
+    "modal"
+  ],
+  "author": "shunnNet",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@crazydos/vue-llm-rich-message": "^0.1.1",
+    "@vueuse/core": "^10.4.1",
+    "langchain": "^0.0.160",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vue/test-utils": "^2.4.1",
+    "element-plus": "^2.3.14",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "happy-dom": "^12.2.1",
+    "prettier": "3.0.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-bundle-visualizer": "^0.10.0",
+    "vite-plugin-dts": "^3.6.0",
+    "vitest": "^0.34.6",
+    "vue-router": "4",
+    "vue-tsc": "^1.8.15"
+  },
+  "files": [
+    "dist"
+  ]
+}
