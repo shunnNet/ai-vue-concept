@@ -1,4 +1,7 @@
 # ai.vue concept demo
+
+[繁體中文](https://github.com/shunnNet/ai-vue-concept/blob/main/README.zh-tw.md)
+
 This repository is a demo showcasing the integration of `Vue.js` with `OpenAI ChatGPT (LLM)`, creating a unique user experience on the web: accomplishing tasks through conversation.
 
 The demo implements a simple business logic:
@@ -47,6 +50,8 @@ Here, I will provide explanations and demonstrations for several key functionali
 ### Service Agent
 [![service-agent](https://i.ytimg.com/vi/T9hUW7oWt-Q/maxresdefault.jpg)](https://www.youtube.com/watch?v=T9hUW7oWt-Q "render-completion") 
 
+> Click image to see the movie
+
 On the `/` page, the chatbot enables users to complete the entire shopping process. I've incorporated business logic and user states into the prompt, and implemented it using `OpenAI` `function_call`.
 
 The chatbot can dynamically decide whether to display the list of products or prompt the user to log in, based on the context. If the conditions are met, it will display the checkout form.
@@ -54,13 +59,16 @@ The chatbot can dynamically decide whether to display the list of products or pr
 ### Navigator Agent
 [![find something](https://i.ytimg.com/vi/xzLdwHXStxM/maxresdefault.jpg)](https://www.youtube.com/watch?v=xzLdwHXStxM "render-completion") 
 
+> Click image to see the movie
+
 You can invoke the `Navigator Agent` by clicking on the input box in the upper right corner of the website and selecting the chatbot on the `Find something` page from the popup.
 
 This agent is aware of the pages present on the website and the elements on those pages. It can respond to your requests by navigating to different pages, scrolling the window to specific elements, and providing explanations as needed.
 
 ### Page Agent
-[![explain-this-page](https://i.ytimg.com/vi/G2G_XLTv9dM/maxresdefault.jpg)](https://www.youtube.com/watch?v=G2G_XLTv9dM "render-completion")  
+[![explain-this-page](https://i.ytimg.com/vi/G2G_XLTv9dM/maxresdefault.jpg)](https://www.youtube.com/watch?v=G2G_XLTv9dM "render-completion") 
 
+> Click image to see the movie
 
 You can invoke the this Agent by clicking on the input box in the upper right corner of the website and selecting the chatbot on the `Explain this page` tab from the popup.
 
@@ -69,6 +77,7 @@ This agent is aware of the elements present on the current page. It can provide 
 ### Render Completion
 [![render-completion](https://i.ytimg.com/vi/UrggY_zLBgU/maxresdefault.jpg)](https://www.youtube.com/watch?v=UrggY_zLBgU "render-completion")  
 
+> Click image to see the movie
 
 Referring to the chatbot on the `RenderCompletion` page, the emphasis here is on the display of Vue components.
 
