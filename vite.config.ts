@@ -10,7 +10,11 @@ import dts from "vite-plugin-dts"
 // https://vitejs.dev/config/
 // https://vitejs.dev/guide/build.html#library-mode
 export default defineConfig({
-  plugins: [vue(), dts({ rollupTypes: true })],
+  plugins: [
+    vue(),
+    dts({ rollupTypes: true }),
+    // msw({ handlers, mode: "browser" }),
+  ],
   test: {
     environment: "happy-dom",
     exclude: [...configDefaults.exclude, "**/src/experimental/**"],

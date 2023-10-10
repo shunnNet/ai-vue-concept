@@ -1,5 +1,6 @@
 import { Plugin } from "vue"
-import { vAi, store } from "./vAi"
+import { vAi } from "./vAi"
+import { routeStatus } from "./routeStatus"
 import { Router } from "vue-router"
 
 export default {
@@ -9,18 +10,25 @@ export default {
 } as Plugin
 
 export const useVueRouter = (router: Router) => {
-  store.routes = router.getRoutes().map((r) => ({
-    id: r.name,
-    title: r.meta.ai.title,
-    desc: r.meta.ai.description,
-  }))
+  routeStatus.routes = router
+    .getRoutes()
+    .map((r) => {
+      return r.meta.ai
+        ? {
+            id: r.name,
+            title: r.meta.ai.title,
+            desc: r.meta.ai.description,
+          }
+        : null
+    })
+    .filter((r) => r)
   router.beforeEach((to, from, next) => {
     console.log("before each", to.meta.ai)
 
     next()
   })
-  router.afterEach((to, from) => {
+  router.afterEach((to) => {
     console.log("after each", to.meta.ai)
-    store.page = to.meta.ai
+    routeStatus.page = to.meta.ai
   })
 }

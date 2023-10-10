@@ -1,4 +1,5 @@
-import { computed, defineComponent, h } from "vue"
+<script lang="ts">
+import { defineComponent, h } from "vue"
 import { ComponentMessage } from "@crazydos/vue-llm-rich-message"
 import { store } from "./canvas"
 
@@ -26,3 +27,4 @@ export default defineComponent({
     }
   },
 })
+</script>
