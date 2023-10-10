@@ -45,6 +45,8 @@ pnpm dev
 - Render Completion
 
 ### Service Agent
+[![service-agent](https://i.ytimg.com/vi/T9hUW7oWt-Q/maxresdefault.jpg)](https://www.youtube.com/watch?v=T9hUW7oWt-Q "render-completion") 
+
 是指在 `/` 這個頁面的 chatbot，可以透過他完成整個購物流程。
 
 我在 `prompt` 中加入商業邏輯、使用者狀態等，並且透過 OpenAI `function_call` 實現它。
@@ -52,6 +54,8 @@ pnpm dev
 他可以根據情形決定是否顯示商品清單，或是要求你登入。若條件滿足，就會顯示結帳的表單。
 
 ### Navigator Agent
+[![find something](https://i.ytimg.com/vi/xzLdwHXStxM/maxresdefault.jpg)](https://www.youtube.com/watch?v=xzLdwHXStxM "render-completion") 
+
 可以透過點選網站右上角的輸入框呼叫，然後在彈窗中選擇 `Find something` 分頁的 chatbot。
 
 這個 Agent 知道網站中有哪些頁面，以及頁面上有什麼元素。
@@ -59,11 +63,15 @@ pnpm dev
 並且可以根據你的需求，切換頁面，將視窗滾動到該元素處，並進行解說
 
 ### Page Agent
+[![explain-this-page](https://i.ytimg.com/vi/G2G_XLTv9dM/maxresdefault.jpg)](https://www.youtube.com/watch?v=G2G_XLTv9dM "render-completion")  
+
 可以透過點選網站右上角的輸入框呼叫，然後在彈窗中選擇 `Explain this page` 分頁的 chatbot。
 
 這個 Agent 知道當前頁面上有什麼元素，可以對其進行解說，並且在有必要的時候，顯示該元素。
 
 ### Render Completion
+[![render-completion](https://i.ytimg.com/vi/UrggY_zLBgU/maxresdefault.jpg)](https://www.youtube.com/watch?v=UrggY_zLBgU "render-completion")  
+
 是指在 RenderCompletion 頁面上的 chatbot。這裡的重點是 Vue 元件的展示。
 
 這個東西寫法上類似 [ai.jsx](https://docs.ai-jsx.com/aboutAIJSX) 的效果，其實也是類似模仿他。
