@@ -45,25 +45,21 @@ Here, I will provide explanations and demonstrations for several key functionali
 - Render Completion
 
 ### Service Agent
-
-https://github.com/shunnNet/ai-vue-concept/assets/50241376/571efa43-cef7-45d8-b0f1-befbad55214d
-
+[![service-agent](https://i.ytimg.com/vi/T9hUW7oWt-Q/maxresdefault.jpg)](https://www.youtube.com/watch?v=T9hUW7oWt-Q "render-completion") 
 
 On the `/` page, the chatbot enables users to complete the entire shopping process. I've incorporated business logic and user states into the prompt, and implemented it using `OpenAI` `function_call`.
 
 The chatbot can dynamically decide whether to display the list of products or prompt the user to log in, based on the context. If the conditions are met, it will display the checkout form.
 
 ### Navigator Agent
-
-https://github.com/shunnNet/ai-vue-concept/assets/50241376/b443a094-8185-4250-ae5b-78c459de001b
+[![find something](https://i.ytimg.com/vi/xzLdwHXStxM/maxresdefault.jpg)](https://www.youtube.com/watch?v=xzLdwHXStxM "render-completion") 
 
 You can invoke the `Navigator Agent` by clicking on the input box in the upper right corner of the website and selecting the chatbot on the `Find something` page from the popup.
 
 This agent is aware of the pages present on the website and the elements on those pages. It can respond to your requests by navigating to different pages, scrolling the window to specific elements, and providing explanations as needed.
 
 ### Page Agent
-
-https://github.com/shunnNet/ai-vue-concept/assets/50241376/120444b1-ab56-4b4c-bf9a-68addb785bf3
+[![explain-this-page](https://i.ytimg.com/vi/G2G_XLTv9dM/maxresdefault.jpg)](https://www.youtube.com/watch?v=G2G_XLTv9dM "render-completion")  
 
 
 You can invoke the this Agent by clicking on the input box in the upper right corner of the website and selecting the chatbot on the `Explain this page` tab from the popup.
@@ -71,7 +67,8 @@ You can invoke the this Agent by clicking on the input box in the upper right co
 This agent is aware of the elements present on the current page. It can provide explanations for these elements and, when necessary, display the specific elements for a more detailed explanation.
 
 ### Render Completion
-<video src='https://github.com/shunnNet/ai-vue-concept/assets/50241376/bd81dc84-21f0-4dc4-8130-8d0150921e30' width=300/>
+[![render-completion](https://i.ytimg.com/vi/UrggY_zLBgU/maxresdefault.jpg)](https://www.youtube.com/watch?v=UrggY_zLBgU "render-completion")  
+
 
 Referring to the chatbot on the `RenderCompletion` page, the emphasis here is on the display of Vue components.
 
