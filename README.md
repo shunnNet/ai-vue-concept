@@ -45,21 +45,34 @@ Here, I will provide explanations and demonstrations for several key functionali
 - Render Completion
 
 ### Service Agent
+
+https://github.com/shunnNet/ai-vue-concept/assets/50241376/571efa43-cef7-45d8-b0f1-befbad55214d
+
+
 On the `/` page, the chatbot enables users to complete the entire shopping process. I've incorporated business logic and user states into the prompt, and implemented it using `OpenAI` `function_call`.
 
 The chatbot can dynamically decide whether to display the list of products or prompt the user to log in, based on the context. If the conditions are met, it will display the checkout form.
 
 ### Navigator Agent
+
+https://github.com/shunnNet/ai-vue-concept/assets/50241376/b443a094-8185-4250-ae5b-78c459de001b
+
 You can invoke the `Navigator Agent` by clicking on the input box in the upper right corner of the website and selecting the chatbot on the `Find something` page from the popup.
 
 This agent is aware of the pages present on the website and the elements on those pages. It can respond to your requests by navigating to different pages, scrolling the window to specific elements, and providing explanations as needed.
 
 ### Page Agent
+
+https://github.com/shunnNet/ai-vue-concept/assets/50241376/120444b1-ab56-4b4c-bf9a-68addb785bf3
+
+
 You can invoke the this Agent by clicking on the input box in the upper right corner of the website and selecting the chatbot on the `Explain this page` tab from the popup.
 
 This agent is aware of the elements present on the current page. It can provide explanations for these elements and, when necessary, display the specific elements for a more detailed explanation.
 
 ### Render Completion
+<video src='https://github.com/shunnNet/ai-vue-concept/assets/50241376/bd81dc84-21f0-4dc4-8130-8d0150921e30' width=300/>
+
 Referring to the chatbot on the `RenderCompletion` page, the emphasis here is on the display of Vue components.
 
 This structure is similar to the effect demonstrated in [ai.jsx](https://docs.ai-jsx.com/aboutAIJSX), essentially following a similar approach.
